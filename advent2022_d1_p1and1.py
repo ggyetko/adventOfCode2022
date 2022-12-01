@@ -10,17 +10,16 @@ class Elf:
 
 elves = [Elf()]
 for line in file:
-    data = line.split("\n")[0]
-    if len(data):
-        elves[-1].addCal(int(data))
+    if line != "\n":
+        elves[-1].addCal(int(line))
     else:
         elves.append(Elf())
 
 elves.sort(reverse=True)
 
 print ("Part 1",elves[0].cal)
-print ("Part 2 {}+{}+{} = {}".format(
-    elves[0].cal, elves[1].cal, elves[2].cal,
-    elves[0].cal + elves[1].cal + elves[2].cal))
+print ("Part 2 {}  (= {}+{}+{})".format(
+    elves[0].cal + elves[1].cal + elves[2].cal,
+    elves[0].cal, elves[1].cal, elves[2].cal))
         
     

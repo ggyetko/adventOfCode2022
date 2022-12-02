@@ -1,5 +1,3 @@
-import re
-
 resultDict = {"X":0, "Y":1, "Z":2}  # array position for lose/draw/win (also, points for same if you x3)
 calcDict = {"A":["C","A","B"], "B":["A","B","C"], "C":["B","C","A"]} # map lose/draw/win into this array
 pointsDict = {"A":1,"B":2,"C":3}

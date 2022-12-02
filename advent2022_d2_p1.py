@@ -1,5 +1,3 @@
-import re
-
 translatDict = {"X":"A","Y":"B","Z":"C"} # turn XYZ into ABC
 victoryDict = {"A":"C","B":"A","C":"B"}  # A beats C, B beats A, C beats B
 pointsDict = {"A":1,"B":2,"C":3}

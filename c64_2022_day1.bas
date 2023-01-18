@@ -6,10 +6,13 @@
 50 tt = tt + val(cc$)
 60 goto 30
 100 :
-110 if tt>t1 then t3=t2:t2=t1:t1=tt:return
+110 if tt>t1 then t3=t2:t2=t1:t1=tt:retu
+rn
 120 if tt>t2 then t3=t2:t2=tt:return
 130 if tt>t3 then t3=tt
 140 return
 150 :
-200 print t1,t2,t3
+200 print "highest:";t1
+202 print "second :";t2
+204 print "third  :";t3
 210 print "total";t1+t2+t3
